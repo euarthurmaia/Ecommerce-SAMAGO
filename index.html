@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAMAGO</title>
+  <link href="css/cdn.jsdelivr.net_npm_bootstrap@5.3.0-alpha3_dist_css_bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div id="header">
+      <div class="cab-1">
+        <div id="logo">
+          <a href="index.html"><img width="90%" height="70%" src="img/logo.png"></a>
+        </div>
+        <div id="loc">
+          <div id="img-loc">
+            <a class="linkA" href="#"><img width="100%" height="35%" src="img/loc.webp"></a>
+          </div>
+          <div id="loc-text">
+            <a class="linkA" href="#"><span>Informe sua Localização</span></a>
+          </div>
+        </div>
+        <div class="barra-pesquisa">
+          <input type="search" class="barra" placeholder="O que você está procurando? :)">
+          <button class="botao-pesquisa">
+            <svg width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </div>
+        <div id="div-usu">
+          <div id="carrinho">
+            <a class="linkA" href="carrinho.html"><img width="40%" height="40%" src="img/carrinho.png"></a>
+          </div>
+          <div id="usuario">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="usuarioDropdown" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="img/usuario.jpg" class="rounded-circle img-fluid">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="usuarioDropdown">
+                <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+                <li><a class="dropdown-item" href="#">Configurações</a></li>
+                <li><a class="dropdown-item" href="#">Sair</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cab-2">
+        <div id="cab2-1">
+          <div class="container">
+            <nav class="navbar bg-transparent">
+              <div class="container-fluid">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <img id="img-toggle2" src="img/linhas.png" width="23px" height="18px">
+                  <span class="navbar-toggler-legend">Filtro</span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Filtro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Todos os Itens
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Calçados</a></li>
+                          <li><a class="dropdown-item" href="#">Blusas</a></li>
+                          <li><a class="dropdown-item" href="#">Chuteiras</a></li>
+                          <li><a class="dropdown-item" href="#">Bonés</a></li>
+                          <li><a class="dropdown-item" href="#">Mochilas</a></li>
+                          <li><a class="dropdown-item" href="#">Bolas</a></li>
+                          <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                          <li><a class="dropdown-item" href="#">Shorts</a></li>
+                          <li><a class="dropdown-item" href="#">Calças</a></li>
+                          <li><a class="dropdown-item" href="#">Meias</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Artigos Masculinos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Calçados</a></li>
+                          <li><a class="dropdown-item" href="#">Blusas</a></li>
+                          <li><a class="dropdown-item" href="#">Chuteiras</a></li>
+                          <li><a class="dropdown-item" href="#">Bonés</a></li>
+                          <li><a class="dropdown-item" href="#">Mochilas</a></li>
+                          <li><a class="dropdown-item" href="#">Bolas</a></li>
+                          <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                          <li><a class="dropdown-item" href="#">Shorts</a></li>
+                          <li><a class="dropdown-item" href="#">Calças</a></li>
+                          <li><a class="dropdown-item" href="#">Meias</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          Artigos Feminino
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Calçados</a></li>
+                          <li><a class="dropdown-item" href="#">Blusas</a></li>
+                          <li><a class="dropdown-item" href="#">Chuteiras</a></li>
+                          <li><a class="dropdown-item" href="#">Bonés</a></li>
+                          <li><a class="dropdown-item" href="#">Mochilas</a></li>
+                          <li><a class="dropdown-item" href="#">Bolas</a></li>
+                          <li><a class="dropdown-item" href="#">Bermudas</a></li>
+                          <li><a class="dropdown-item" href="#">Shorts</a></li>
+                          <li><a class="dropdown-item" href="#">Calças</a></li>
+                          <li><a class="dropdown-item" href="#">Meias</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <nav id="cab2-2">
+          <ul>
+            <li><a href="#" class="cab2-none">Esportes</a></li>
+            <li><a href="#">Homens</a></li>
+            <li><a href="#">Mulheres</a></li>
+            <li><a href="#">Crianças</a></li>
+            <li><a href="#" class="cab2-none">Calçados</a></li>
+            <li><a href="#" class="cab2-none">Roupas</a></li>
+            <li><a href="#" class="cab2-none">Acessórios</a></li>
+            <li><a href="#" class="cab2-none">Marcas</a></li>
+            <li><a href="#" class="cab2-none">Futebol</a></li>
+          </ul>
+        </nav>
+
+        <div id="cab2-3">
+          <div id="div-usu">
+            <div id="carrinho">
+              <a class="linkA" href="carrinho.html"><img width="40%" height="40%" src="img/carrinho.png"></a>
+            </div>
+            <div id="usuario">
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="usuarioDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="img/usuario.jpg" class="rounded-circle img-fluid fixed-width">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="usuarioDropdown">
+                  <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Configurações</a></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carousel1.jpg" class="imagem-carrossel d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel2.jpg" class="imagem-carrossel d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="alternativeCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/mais-vendidos-real.jpg" class="imagem-carrossel d-block w-100" alt="..." width="100%"
+            height="100%">
+        </div>
+        <div class="carousel-item">
+          <img src="img/mais-vendidos-city.jpg" class="imagem-carrossel d-block w-100" alt="..." width="100%"
+            height="100%">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#alternativeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#alternativeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <div class="info">
+      <img src="img/propaganda2.jpg" alt="" height="90%" width="100%">
+    </div>
+
+    <h3>NOVOS PRODUTOS</h3>
+    <h2>Acabaram de chegar na nossa loja, venha conferir!</h2>
+
+
+    <div class="produtos">
+
+      <img id="slideLeft" class="arrow" src="img/arrow-left.png">
+      <div id="slider">
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/soda15.jpg" height="100%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Nike FG zoom soda 15 elite SE Campo - Adulto
+                  <br>
+                  <s>de R$ 2500,00 </s>
+                  <strong>R$ 1999,90</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>199,99</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/timao.jpg" height="100%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Corinthians I Nike 2023
+                  <br>
+                  <s>de R$ 350,00 </s>
+                  <strong>R$ 300,00</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 60,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/bolacham.jpg" alt="" height="100%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Adidas bola da Champions league 22/23
+                  <br>
+                  <s>de R$ 300,00 </s>
+                  <strong>R$ 250,00</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 50,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/mochilapuma.jpg" height="100%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Mochila Puma Phase
+                  <br>
+                  <s>de R$ 239,95 </s>
+                  <strong>R$ 200,00</strong>
+                  <br>
+                  até <strong>2x</strong> de <strong>R$ 100,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/corrida.jpg" height="100%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Tênis Olympikus Voa Colors 951 Preto
+                  <br>
+                  <s>de R$ 400,00 </s>
+                  <strong>R$ 299,99</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 60,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/brasil.jpg" height="100%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Brasil I Nike 22/23
+                  <br>
+                  <s>de R$ 350,00 </s>
+                  <strong>R$ 300,00</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 60,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/PredatoEDGE.jpg" height="70%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Adidas Predator Edge+ FG Diamond Edge
+                  <br>
+                  <s>de R$ 1500,00 </s>
+                  <strong>R$ 999,99</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>R$ R$100,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/predatorCL.jpg" height="70%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Adidas predator edge champions league 2022-2023
+                  <br>
+                  <s>de R$ 1500,00 </s>
+                  <strong>R$ 999,99</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>R$ R$100,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/palmeiras.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela3.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Palmeiras I Puma 2023
+                  <br>
+                  <strong>R$ 329,87</strong>
+                  <br>
+                  até <strong>4x</strong> de <strong>R$ 82,47</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/fluzao.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Fluminense I Umbro 2023
+                  <br>
+                  <s>de R$ 350,00 </s>
+                  <strong>R$ 279,99</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 55,99</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <img id="slideRight" class="arrow" src="img/arrow-right.png">
+
+    </div>
+
+    <h3>MAIS VENDIDOS</h3>
+    <h2>Produtos que bombaram de vendas em 2023!</h2>
+    <a href="produto.html">
+      <div class="propaganda">
+        <div class="img1">
+          <img src="img/mais vendidos1.jpg" alt="" height="100%" width="100%">
+        </div>
+        <div class="img2">
+          <img src="img/mais vendidos2.jpg" alt="" height="100%" width="100%">
+        </div>
+      </div>
+    </a>
+
+    <h3 class="h3-produtos">OUTROS PRODUTOS</h3>
+    <h2>Outros produtos especialmente para você</h2>
+
+
+    <div class="produtos">
+
+      <img id="slideLeft2" class="arrow" src="img/arrow-left.png">
+      <div id="slider2">
+        <div class="thumbnail">
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/mengao.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Flamengo I Adidas 2023
+                  <br>
+                  <strong>R$ 349,99</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 70,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/Vasco2.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Vasco I kappa 2022
+                  <br>
+                  <s>de R$ 300,00 </s>
+                  <strong>R$ 189,90</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 37,98</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/basquete.jpg" height="90%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Bola Basquete Adidas - Preto+Dourado
+                  <br>
+                  <s>de R$ 150,00 </s>
+                  <strong>R$ 120,00</strong>
+                  <br>
+                  até <strong>3x</strong> de <strong>R$ 40,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/lakers22-23.jpg" height="100%" width="75%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Regata Nike Los Angeles Lakers Icon Edition 2022/23 Masculina
+                  <br>
+                  <s>de R$ 750,00 </s>
+                  <strong>R$ 649,99</strong>
+                  <br>
+                  até <strong>7x</strong> de <strong>R$ 92,86</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/tenisbasquete.jpg" height="77%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Tênis Nike Kyrie 7 Black Red
+                  <br>
+                  <s>de R$ 849,00 </s>
+                  <strong>R$ 699,00</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>R$ 69,90</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/soda15.jpg" height="100%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Nike FG zoom soda 15 elite SE Campo - Adulto
+                  <br>
+                  <s>de R$ 2500,00 </s>
+                  <strong>R$ 1999,90</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>199,99</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/timao.jpg" height="100%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Corinthians I Nike 2023
+                  <br>
+                  <s>de R$ 350,00 </s>
+                  <strong>R$ 300,00</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 60,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/bolacham.jpg" alt="" height="100%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Adidas bola da Champions league 22/23
+                  <br>
+                  <s>de R$ 300,00 </s>
+                  <strong>R$ 250,00</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 50,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/mochilapuma.jpg" height="100%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Mochila Puma Phase
+                  <br>
+                  <s>de R$ 239,95 </s>
+                  <strong>R$ 200,00</strong>
+                  <br>
+                  até <strong>2x</strong> de <strong>R$ 100,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/corrida.jpg" height="100%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Tênis Olympikus Voa Colors 951 Preto
+                  <br>
+                  <s>de R$ 400,00 </s>
+                  <strong>R$ 299,99</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 60,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <img id="slideRight2" class="arrow" src="img/arrow-right.png">
+
+    </div>
+
+    <div class="produtos">
+
+      <img id="slideLeft3" class="arrow" src="img/arrow-left.png">
+      <div id="slider3">
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/brasil.jpg" height="100%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Brasil I Nike 22/23
+                  <br>
+                  <s>de R$ 350,00 </s>
+                  <strong>R$ 300,00</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 60,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/PredatoEDGE.jpg" height="70%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Adidas Predator Edge+ FG Diamond Edge
+                  <br>
+                  <s>de R$ 1500,00 </s>
+                  <strong>R$ 999,99</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>R$ R$100,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/predatorCL.jpg" height="70%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Adidas predator edge champions league 2022-2023
+                  <br>
+                  <s>de R$ 1500,00 </s>
+                  <strong>R$ 999,99</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>R$ R$100,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/palmeiras.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela3.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Palmeiras I Puma 2023
+                  <br>
+                  <strong>R$ 329,87</strong>
+                  <br>
+                  até <strong>4x</strong> de <strong>R$ 82,47</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/fluzao.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Fluminense I Umbro 2023
+                  <br>
+                  <s>de R$ 350,00 </s>
+                  <strong>R$ 279,99</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 55,99</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/mengao.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Flamengo I Adidas 2023
+                  <br>
+                  <strong>R$ 349,99</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 70,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/Vasco2.jpg" height="100%" width="70%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Camisa Vasco I kappa 2022
+                  <br>
+                  <s>de R$ 300,00 </s>
+                  <strong>R$ 189,90</strong>
+                  <br>
+                  até <strong>5x</strong> de <strong>R$ 37,98</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/basquete.jpg" height="90%" width="80%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela4.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Bola Basquete Adidas - Preto+Dourado
+                  <br>
+                  <s>de R$ 150,00 </s>
+                  <strong>R$ 120,00</strong>
+                  <br>
+                  até <strong>3x</strong> de <strong>R$ 40,00</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/lakers22-23.jpg" height="100%" width="75%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Regata Nike Los Angeles Lakers Icon Edition 2022/23 Masculina
+                  <br>
+                  <s>de R$ 750,00 </s>
+                  <strong>R$ 649,99</strong>
+                  <br>
+                  até <strong>7x</strong> de <strong>R$ 92,86</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+        <div class="thumbnail">
+
+
+          <div class="produtos-1">
+
+            <a href="produto.html">
+              <div class="div-img">
+                <img src="img/tenisbasquete.jpg" height="77%" width="100%">
+              </div>
+              <div class="div-desc">
+                <div class="div-estrelas">
+                  <img class="img-estrelas" src="img/Estrela5.jpg" height="100%" width="40%">
+                </div>
+                <hr>
+                <div class="div-descricao">
+                  Tênis Nike Kyrie 7 Black Red
+                  <br>
+                  <s>de R$ 849,00 </s>
+                  <strong>R$ 699,00</strong>
+                  <br>
+                  até <strong>10x</strong> de <strong>R$ 69,90</strong> sem juros
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <img id="slideRight3" class="arrow" src="img/arrow-right.png">
+
+    </div>
+
+
+
+    <h3>FORNECEDORES</h3>
+    <h2>Os melhores fornecedores você encontra aqui na Samago</h2>
+    <div class="fornecedores">
+      <img id="slideLeft4" class="arrow" src="img/arrow-left.png">
+      <div id="slider4">
+        <div class="thumbnail">
+          <div class="fornecedores-1">
+            <img src="img/olympikus.jpg" alt="" height="100%" width="100%">
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="fornecedores-1">
+            <img src="img/puma.jpg" alt="" height="100%" width="100%">
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="fornecedores-1">
+            <img src="img/diadora.jpg" alt="" height="100%" width="100%">
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="fornecedores-1">
+            <img src="img/adidas.jpg" alt="" height="100%" width="100%">
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="fornecedores-1">
+            <img src="img/kappa.jpg" alt="" height="100%" width="100%">
+          </div>
+        </div>
+        <div class="thumbnail">
+          <div class="fornecedores-1">
+            <img src="img/nike.jpg" alt="" height="100%" width="100%">
+          </div>
+        </div>
+      </div>
+      <img id="slideRight4" class="arrow" src="img/arrow-right.png">
+    </div>
+  </main>
+
+
+  <footer>
+    <div class="footer">
+      <div class="footer-info">
+        <div class="footer-1">
+          <div class="exclusivo">
+            <h5>Conheça-nos</h5>
+          </div>
+          <div class="exclusivo-2">
+            <a href="#">Sobre</a>
+            <br>
+            <a href="#">Acessibilidade</a>
+            <br>
+            <a href="#">Arrow Momentum&reg;</a>
+          </div>
+        </div>
+        <div class="footer-2">
+          <h5>Ajuda e Suporte</h5>
+          <a href="#">Regulamentos</a>
+          <br>
+          <a href="#">Política de Privacidade</a>
+          <br>
+          <a href="#">Política de Cookies</a>
+          <br>
+          <a href="#">Políticas de Trocas e Arrependimento</a>
+          <br>
+          <a href="#">Perguntas Frequentes</a>
+          <br>
+          <a href="#">Termos e Condições</a>
+          <br>
+          <a href="#">Segurança</a>
+          <br>
+          <a href="#">Fornecedores</a>
+          <br>
+          <a href="#">Serviços</a>
+        </div>
+        <div class="footer-3">
+          <h5>Pagamento</h5>
+          <a href="#">Meios de Pagamento</a>
+          <br>
+          <a href="#">Compre com Pontos</a>
+        </div>
+        <div class="footer-4">
+          <h5>Contato</h5>
+          <a href="#">Acompanhe seu Pedido</a>
+          <br>
+          <a href="#">Televendas (11) 4002 8922</a>
+          <br>
+          <a href="#">Atendimento</a>
+          <br>
+          <a href="#">Enviar E-mail</a>
+          <br>
+          <a href="#">Soluções para Empresas</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-5">
+      <a href="#" class="samagopreta">
+        <img src="img/logo-preta.png" height="12%" width="12%">
+      </a>
+      <img src="img/formas-pg.png" height="15%" width="15%">
+      <img src="img/redes.png" height="10%" width="10%">
+      <img src="img/LogoArrow.png" height="15%" width="15%">
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+</html>

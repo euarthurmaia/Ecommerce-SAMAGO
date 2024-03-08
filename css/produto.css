@@ -1,0 +1,221 @@
+main{
+  height: 35em;
+  display: flex;
+  width: 100%;
+}
+
+  .div-infoimg{
+    width: 32%;
+    height: 100%;
+    float: left;
+  }
+
+    .div-infoimg-2{
+      margin: 8%;
+    }
+
+      .div-nome{
+        width: 100%;
+        height: 10%;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .div-avaliacao{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+      }
+
+        .div-avaliacao .div-nota{
+          width: 12%;
+          height: 15%;
+        }
+
+        .div-avaliacao .div-estrela{
+          width: 20%;
+          height: 40%;
+          font-size: 9px;
+        }
+
+          .div-avaliacao .div-estrela a{
+            text-decoration: none;
+          }
+
+        .div-infoimg .div-infoimg-2 .div-descricao{
+          display: flex;
+          flex-direction: column;
+          margin-left: 3%;
+        }
+
+  .div-imgproduto{
+      width: 32%;
+      height: 100%;
+      text-align: center;
+      margin: 0 2%;
+  }
+
+      .imgproduto-principal{
+          height: 78%;
+          width: 100%;
+      }
+
+      .icone-img{
+          height: 12%;
+          width: 100%;
+          display: flex;
+      }
+
+          .imgproduto-icone{
+              border: 0.1em solid #999;
+              margin-left: 2%;
+              width: 18%;
+              height: 100%;
+              cursor: pointer;
+          }
+
+          #img-container{
+              z-index: 1;
+              max-width: 500px;
+              position: relative;
+          }
+
+  .div-preco-img{
+    width: 32%;
+    height: 100%;
+    float: right;
+  }
+
+    .div-preco-img-2{
+      width: 100%;
+      height: 100%;
+      margin: 8% 0;
+    }
+
+      .div-preco-img .div-preco-camisa{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+      }
+
+        .div-preco-img .div-preco-camisa .label-preco{
+          font-size: 30px;
+        }
+
+      .div-preco-img .div-formas-pagamento{
+        flex-direction: column;
+        margin-bottom: 5%;
+        display: block;
+		  	margin-top: 0.8em;
+      }
+
+      .div-preco-img .div-tamanho{
+        margin-bottom: 5%;
+      }
+
+        .div-preco-img .div-tamanho .div-tamanho-letras{
+          display: flex;
+        }
+
+          .div-preco-img .div-tamanho .circulos-tamanho{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            border: 1px solid black;
+            border-radius: 50%;
+            font-weight: bold;
+            }
+
+            .circulos-tamanho:hover {
+              color: #8c9bf8;
+            }
+
+            .circulos-tamanho{
+              cursor: pointer;
+            }
+
+      .div-comprar{
+        width: 100%;
+        height: 10%;
+        display: flex;
+      }
+
+        .div-comprar .div-comprar-botao{
+          width: 25%;
+          height: 100%;
+        }
+
+        .div-comprar .div-favorito-botao{
+          width: 25%;
+          height: 100%;
+          margin-left: 1%;
+        }
+
+          .div-comprar .div-comprar-botao button{
+            width: 100%;
+            height: 100%;
+            background-color: #003785;
+            color: #FFFFFF;
+          }
+
+          .div-comprar .div-favorito-botao button{
+            width: 100%;
+            height: 100%;
+            background-color: #d3d3d3;
+            color: #000000;
+            margin-right: 1%;
+          }
+
+        .div-comprar .div-comprar-carrinho{
+          width: 25%;
+          height: 100%;
+
+        }
+
+          .div-comprar .div-comprar-carrinho img{
+            width: 100%;
+            height: 100%;
+          }
+
+@media(max-width: 900px){
+  .div-avaliacao{
+    display: none;
+  }
+}
+
+@media(max-width: 950px){
+  .div-infoimg-2-oculta{
+    display: block;
+    height: 20%;
+  }
+  .div-infoimg{
+    display: none;
+  }
+  .div-preco-img{
+    width: 48%;
+    height: 100%;
+  }
+  .div-preco-img-2{
+    height: 60%;
+  }
+  .div-imgproduto{
+    width: 48%;
+    height: 100%;
+  }
+}
+@media(min-width: 950px){
+  .div-infoimg-2-oculta{
+    display: none;
+  }
+}
+
+@media (max-width: 600px){
+  .div-infoimg-2-oculta{
+    display: block;
+    height: 25%;
+  }
+}
